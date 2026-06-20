@@ -8,54 +8,46 @@
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 	</head>
 	<body>
-	<button id="signup" class="btn btn-danger"
-        data-toggle="modal"
-        data-target="#myModal">
+	<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#signupModal">
     Sign Up
 </button>
 
-<div id="myModal" class="modal fade" role="dialog">
+<div class="modal fade" id="signupModal">
     <div class="modal-dialog">
         <div class="modal-content">
 
             <div class="modal-header">
-                <button type="button"
-                        class="close"
-                        data-dismiss="modal">
-                    &times;
-                </button>
-                <h4 class="modal-title">Create Account</h4>
+                <h5 class="modal-title">Create Account</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
             </div>
 
             <div class="modal-body">
+                <form>
 
-                <label>Email address</label>
-                <input type="email"
-                       class="form-control"
-                       placeholder="Enter email">
+                    <label>Email address</label>
+                    <input type="email" class="form-control" placeholder="Enter email">
 
-                <small>Your information is safe with us.</small>
+                    <small class="form-text text-muted">
+                        Your information is safe with us.
+                    </small>
 
-                <br><br>
+                    <br><br>
 
-                <label>Password</label>
-                <input type="password"
-                       class="form-control"
-                       placeholder="Password">
+                    <label>Password</label>
+                    <input type="password" class="form-control" placeholder="Password">
 
-                <br>
+                    <br>
 
-                <label>Confirm Password</label>
-                <input type="password"
-                       class="form-control"
-                       placeholder="Confirm Password">
+                    <label>Confirm Password</label>
+                    <input type="password" class="form-control" placeholder="Confirm Password">
 
-            </div>
+                    <br>
 
-            <div class="modal-footer">
-                <button class="btn btn-success">
-                    Submit
-                </button>
+                    <button type="submit" class="btn btn-success">
+                        Submit
+                    </button>
+
+                </form>
             </div>
 
         </div>
