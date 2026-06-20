@@ -8,13 +8,13 @@
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 	</head>
 	<body>
-	<button id="signup" class="btn btn-danger" data-toggle="modal" data-target="#signupModel">Sign Up</button>
+	<button id="signup" class="btn btn-danger" data-toggle="modal" data-target="signupModel">Sign Up</button>
 	
-	<div clas="myModal" class="modal">
-		<div class="modal-dialogue">
+	<div clas="signupModel" class="modal fade">
+		<div class="modal-dialog">
 			<div class="modal-content">
 				<div class="modal-header">
-						<button class="close" data-dismiss="modal"></button>
+						<button class="close" data-dismiss="modal">&times;</button>
 					<h4>Create Account</h4>
 		         </div>
 			<div class="modal-body">
@@ -31,7 +31,7 @@
 
 				<br>
 				<label>Confirm Password</label>
-				<input type="password" class="form-password" placeholder="Confirm Password">
+				<input type="password" class="form-control" placeholder="Confirm Password">
 			</div>
 
 			<div class="modal-footer">
